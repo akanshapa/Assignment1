@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 
 
-export const connectDb = async()=>{
+const connectDb = async()=>{
     try {
          await mongoose.connect(`${process.env.MONGODB_URI}`)
         console.log("connected to database");
@@ -11,3 +11,4 @@ export const connectDb = async()=>{
     }
 }
 
+export default connectDb;

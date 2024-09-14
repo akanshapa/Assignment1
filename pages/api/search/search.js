@@ -1,7 +1,7 @@
 // pages/api/search.js
 
-import {connectDb}   from '@/pages/db/index.js';
-import {User} from '@/pages/models/user.model.js'
+import connectDb   from '@/db/index.js';
+import User from '@/models/user.model.js'
 
 
 
